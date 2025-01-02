@@ -1,0 +1,77 @@
+/* Navbar transitions */
+.navbar-custom {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar-custom.bg-dark {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour le sticky */
+  }
+  
+  .navbar-custom.bg-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+  
+  /* Sticky top compatibility */
+  .sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1020 !important;
+  }
+  
+  /* Logo styling */
+  .navbar-brand .logo-img {
+    width: 120px;
+    transition: transform 0.3s ease, width 0.3s ease;
+  }
+  
+  .navbar.sticky-top .logo-img {
+    transform: scale(0.9); /* Réduire légèrement la taille */
+    width: 110px; /* Réduction progressive de la largeur */
+  }
+  
+  /* Nav links */
+  .navbar .nav-link {
+    font-weight: 500;
+    color: #fff; /* Par défaut, les liens sont blancs */
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .navbar .nav-link:hover {
+    color: var(--secondary-color) !important; /* Ajouter une couleur au survol */
+    border-bottom: 2px solid var(--secondary-color); /* Indicateur visuel */
+    padding-bottom: 2px;
+  }
+  
+  /* Navbar toggler button (mobile) */
+  .navbar .navbar-toggler {
+    border-color: #fff;
+  }
+  
+  .navbar .navbar-toggler-icon {
+    filter: brightness(1); /* Évitez inherit pour plus de contrôle */
+  }
+  
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  /* Mobile-specific styles */
+  @media screen and (max-width: 992px) {
+    #basic-navbar-nav {
+      background-color: rgba(0, 0, 0, 0.9); /* Couleur de fond cohérente */
+      transition: background-color 0.3s ease;
+    }
+  
+    .navbar .nav-link {
+      color: #ccc; /* Couleur légèrement atténuée pour les petits écrans */
+    }
+  
+    .navbar .nav-link:hover {
+      color: var(--primary-color);
+      border-bottom: none;
+      padding-bottom: 0.5rem; /* Ajuster l'espacement */
+    }
+  }
+  

@@ -1,0 +1,33 @@
+
+#features .Card-title{
+    font-size: 3rem;
+}
+
+#features svg{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    #features .Card-title {
+        font-size: 1.75rem;
+    }
+}
+.dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: var(--secondary-color) ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .dot.active {
+    background-color: #ffffff;
+  }
+  

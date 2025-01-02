@@ -1,0 +1,23 @@
+
+#plans .bg-purple{
+    background-color: var(--secondary-color);
+}
+#plans .col-lg-4:nth-child(2) .card{
+    height: 500px;
+}
+
+#plans .col-lg-4:first-child .card,
+#plans .col-lg-4:last-child .card{
+    height: 400px;
+}
+
+#plans h3{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 992) {
+    #plans .col-lg-4:nth-child(2) .card{
+        height: 400px;
+    }  
+    
+}
